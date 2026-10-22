@@ -1,0 +1,50 @@
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+.venv*/
+venv/
+.env
+.env.*
+!.env.example
+
+# Models and checkpoints
+*.pt
+*.pth
+*.onnx
+*.engine
+*.plan
+*.safetensors
+
+# Generated artifacts
+runs/
+output/
+*.log
+*.bak
+
+# Local metadata
+.DS_Store
+.ipynb_checkpoints/
+
+# Personal biometric data and local dependencies
+insightface21/
+models/
+output/
+*.jpg
+*.jpeg
+*.png
+*.npy
+*.npz
+*.pkl
+*.pickle
+*.db
+*.sqlite
+*.sqlite3
+
+data/
+*.heic
+*.webp
+*.mp4
+*.mov
+*.jsonl
+*.csv
