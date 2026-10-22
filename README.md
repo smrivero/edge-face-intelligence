@@ -1,6 +1,12 @@
-# Edge Face Intelligence
+# Edge Face Intelligence: Multi-Model Facial Analysis
 
-On-device face detection, identity recognition and facial-attribute inference on NVIDIA Jetson.
+Local facial recognition and multimodel computer vision on NVIDIA Jetson Orin Nano Super.
+
+**Face detection, identity embeddings, multi-person recognition and TensorRT-accelerated facial-attribute analysis.**
+
+This project implements several local inference workflows using YuNet, ArcFace, InsightFace and TensorRT. Camera-based applications support identity enrollment, embedding comparison and browser-based visualization.
+
+Facial attributes and experimental liveness analysis are implemented as separate components.
 
 ## Overview
 
@@ -42,6 +48,15 @@ Browser interfaces expose video streams and application status.
 | `rgb_liveness.py` | Experimental RGB liveness |
 | `capture.py` | Camera capture |
 | `live_face.py` | Live face detection |
+
+## Engineering Highlights
+
+- Multi-model computer vision pipelines.
+- Face embeddings and similarity-based identity matching.
+- Multiple registered identities and unknown-face handling.
+- TensorRT acceleration for facial attributes.
+- Real-time camera processing and browser-based interfaces.
+- Local biometric data handling and experimental liveness analysis.
 
 ## Requirements
 
@@ -100,7 +115,3 @@ Depth and RGB liveness implementations are experimental and are not validated an
 Age estimation is approximate. Gender outputs are model-based appearance classifications and do not establish personal identity.
 
 No reproducible recognition accuracy or false-match benchmark is claimed.
-
-## Project Scope
-
-Face recognition, feature embeddings, GPU inference, multimodel applications, camera integration and edge deployment.
